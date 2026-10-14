@@ -1,10 +1,10 @@
 package introducao.classe.test;
 
-import introducao.classe.modeo.estudante;
+import introducao.classe.modeo.Estudante;
 
-public class estudanteTest01 {
+public class EstudanteTest01 {
     public static void main(String[] args) {
-        estudante estudante = new estudante();
+        Estudante estudante = new Estudante();
         estudante.nome = "Pedro";
         estudante.idade = 'M';
         estudante.sexo = 'F';
