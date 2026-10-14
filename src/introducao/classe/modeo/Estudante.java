@@ -1,6 +1,6 @@
 package introducao.classe.modeo;
 
-public class estudante {
+public class Estudante {
     public String nome;
     public int idade;
     public char sexo;
