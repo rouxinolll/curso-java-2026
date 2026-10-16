@@ -9,9 +9,9 @@ public class FuncionarioTest01 {
 
         ImpressoraFuncionario impressoraFunc = new ImpressoraFuncionario();
 
-        funcionario1.nome = "Joao";
-        funcionario1.idade = 19;
-        funcionario1.salario = new double[]{2000,3000,4000};
+        funcionario1.setNome("Joao");
+        funcionario1.setIdade(19);
+        funcionario1.setSalario(new double[]{2000,3000,4000});
 
         impressoraFunc.imprimirF(funcionario1);
         impressoraFunc.imprimirMedia(funcionario1);
