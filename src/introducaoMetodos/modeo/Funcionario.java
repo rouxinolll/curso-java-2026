@@ -4,26 +4,25 @@ public class Funcionario {
     private String nome;
     private int idade;
     private double [] salario;
-    private double media ;
+    private double media = 0 ;
 
-    public void imprimirF(Funcionario funcionario) {
+    public void imprimirF() {
 
         System.out.println("----------------------------");
-        System.out.println("Nome" + funcionario.nome);
-        System.out.println("Nome" + funcionario.nome);
-        System.out.println("Idade" + funcionario.idade);
+        System.out.println("Nome" + this.nome);
+        System.out.println("Idade" + this.idade);
 
-        for(double salario : funcionario.salario) {
+        for(double salario : this.salario) {
             System.out.println(salario + " ");
         }
 
     }
-    public void imprimirMedia(Funcionario funcionario) {
-        double media = 0;
-        for(double salario : funcionario.getSalario()) {
-            media += salario;
+    public void imprimirMedia(double... salario) {
+
+        for(double num : salario) {
+            media += num;
         }
-        media /=  funcionario.salario.length;
+        media /=  salario.length;
         System.out.println("Media" + media);
     }
 
